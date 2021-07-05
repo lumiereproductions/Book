@@ -3,6 +3,10 @@ const express = require("express");
 const mongoose = require("mongoose");
 const database = require("./database/index");
 
+const BookModels = require("./database/book");
+const AuthorModels = require("./database/author");
+const PublicationModels = require("./database/publication");
+
 const shapeAI = express();
 
 shapeAI.use(express.json());
